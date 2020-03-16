@@ -7,8 +7,8 @@
 body {
 	font-family: 'Montserrat', sans-serif;    
 	margin: 0px auto;
-    background-color: #E9E9E9;
-    padding-left: 10%;
+    background-color: rgb(245, 245, 245);
+    padding-left: 5%;
 }
 
 nav {
@@ -16,7 +16,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color:  #E9E9E9;
+    background-color:  rgb(245, 245, 245);
 }
 
 .nav-links {
@@ -72,33 +72,33 @@ nav {
 
 @media screen and (max-width:1024px){
         .nav-links{
-            width: 50%;
+            width: 40%;
         }
+        .nav-links{
+            position: absolute;
+            height: 80vh;
+            top: 20vh;
+            background-color: #E9E9E9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translatey(100%);
+            transition: transform 0.5s ease-in;
+            opacity: 0;
+            }
+            .nav-links li {
+                opacity: 0;
+            }
+            .nav-links a {
+                font-size: 1.75rem;
+            }
+            .navmenu{
+                display: block;
+            }
 }
 
 @media screen and (max-width:768px){
-    .nav-links{
-    position: absolute;
-    height: 80vh;
-    top: 20vh;
-    background-color: #E9E9E9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translatey(100%);
-    transition: transform 0.5s ease-in;
-    opacity: 0;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-    .nav-links a {
-        font-size: 1.75rem;
-    }
-    .navmenu{
-        display: block;
-    }
     .column {
         flex: 100%;
         max-width: 105%;
