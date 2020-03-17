@@ -60,8 +60,8 @@ nav {
   }
   
   .column {
-    flex: 45%;
-    max-width: 45%;
+    flex: 30%;
+    max-width: 30%;
     margin: 10px;
   }
   
@@ -91,11 +91,19 @@ nav {
                 opacity: 0;
             }
             .nav-links a {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
             .navmenu{
                 display: block;
             }
+            .logo {
+                font-size: 1.75rem;
+            }
+            .column {
+                flex: 45%;
+                max-width: 45%;
+                margin: 10px;
+              }
 }
 
 @media screen and (max-width:768px){

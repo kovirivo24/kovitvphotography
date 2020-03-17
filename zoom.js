@@ -1,0 +1,2 @@
+mediumZoom('img', {
+});

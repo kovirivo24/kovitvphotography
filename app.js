@@ -18,4 +18,3 @@ navmenu.addEventListener('click',() => {
 }
 
 navSlide();
-
