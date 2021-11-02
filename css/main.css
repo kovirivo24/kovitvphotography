@@ -11,6 +11,10 @@ body {
     padding-left: 5%;
 }
 
+h2 {
+    text-align: center;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -54,7 +58,39 @@ nav {
     transition: all 0.3s ease;
 }
 
-.row {
+.one-third-featured {
+    max-width: 33.3333333%;
+    padding: 2%;
+    float: left;
+    
+}
+
+.one-third-featured img:hover{
+    height: 500px;
+    width: 500px;
+    transform: scale(1.1);
+    text-align: center;
+}
+
+img {
+    text-align: center;
+    max-width: 100%;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+p{
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+    padding-bottom: 3%;
+}
+
+/* .row {
     display: flex;
     flex-wrap: wrap;
   }
@@ -68,7 +104,8 @@ nav {
   .column img {
     width: 100%;
     padding-bottom: 15px;
-  }
+  } */
+
 
 @media screen and (max-width:1024px){
         .nav-links{
@@ -99,19 +136,27 @@ nav {
             .logo {
                 font-size: 1.75rem;
             }
-            .column {
-                flex: 45%;
-                max-width: 45%;
-                margin: 10px;
-              }
+
 }
 
 @media screen and (max-width:768px){
-    .column {
-        flex: 100%;
-        max-width: 105%;
-        padding-left: 10px;
-        padding-right: 10px;
+    h2 {
+        font-size: 1.5 rem;
+    }
+    
+    .one-third-featured {
+        max-width: 100%;
+        padding: 4%;
+        float: left;
+        
+    }
+    img {
+        width: auto;
+        height: auto;
+    }
+    .one-third-featured img:hover{
+        width: auto;
+        height: auto;
     }
 }
 .nav-active{
