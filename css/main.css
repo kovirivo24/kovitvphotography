@@ -6,16 +6,17 @@
 
 
 body {
-	font-family: 'Montserrat', sans-serif;    
+	font-family: 'Montserrat', 'Montserrat';    
 	margin: 0px auto;
     background-color: rgb(245, 245, 245);
     padding-right: 5%;
     padding-left: 5%;
 }
 
-h2 {
+.textcat {
+    font-size: 1.5rem;
     text-align: center;
-    color: rgb(54, 53, 53);
+    color: rgb(53, 53, 53);
 }
 
 a { color: inherit;
@@ -55,7 +56,7 @@ nav {
 .logo {
     color: rgb(39, 38, 38);
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 .navmenu {
@@ -96,6 +97,7 @@ img {
 .photocat {
     clear: both;
     padding-bottom: 3%;
+
 }
 
 .contact {
@@ -107,7 +109,7 @@ img {
     list-style-type: none;
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .socialmedia li {
@@ -163,11 +165,11 @@ img {
                 display: block;
             } */
         body {
-            padding-right: 2.5%;
-            padding-left: 2.5%;
+            padding-right: 1.5%;
+            padding-left: 1.5%;
         }
         .logo {
-                font-size: 1.75rem;
+                font-size: 1.75em;
             }
         .nav-links {
             display: none;
@@ -181,37 +183,28 @@ img {
             width: 100%;
             list-style-type: none;
             text-align: center;
-            padding: 5%;
+            padding: 1.75rem;
         }
         .navbar li{
             display: inline;
-            padding: 5%;
+            padding: 5.75%;
         }
         .navbar a{
             font-size: 2.5rem;
         }
+        .socialmedia {
+            margin-bottom: 8rem;
+        }    
 
 }
 
 
 @media screen and (max-width:768px){
-    h2 {
-        font-size: 1.5 rem;
-    }
-    
+
     .one-third-featured {
         max-width: 100%;
-        padding: 4%;
-        float: left;
-        
-    }
-    img {
-        width: auto;
-        height: auto;
-    }
-    .one-third-featured img:hover{
-        width: auto;
-        height: auto;
+        padding: 2%;
+        float: left;   
     }
 }
 .nav-active{
@@ -219,12 +212,3 @@ img {
     opacity: .75;
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,5px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-5px);
-}
