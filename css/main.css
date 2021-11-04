@@ -181,18 +181,25 @@ img {
             overflow: hidden;
             position: fixed;
             bottom: 0;
-            width: 100%;
+            max-width: 100%;
             list-style-type: none;
             text-align: center;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            padding: 1rem;
         }
         .navbar li{
             display: inline;
-            padding: 5.75%;
+            padding: 0.75%;
         }
-        .navbar a{
+        /* .navbar a{
             font-size: 2.5rem;
+        } */
+        .navbar img{
+            max-width: 17%;
+            height: auto;   
+            transition: transform .2s;
+        }
+        .navbar img:hover{
+            transform: scale(1.15);
         }
         .socialmedia {
             margin-bottom: 8rem;
