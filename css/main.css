@@ -183,7 +183,8 @@ img {
             width: 100%;
             list-style-type: none;
             text-align: center;
-            padding: 1.75rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
         .navbar li{
             display: inline;
